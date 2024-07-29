@@ -1,0 +1,408 @@
+body {
+  font-family: "Helvetica Neue", "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #000;
+}
+
+.logo img {
+  margin-right: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 20px;
+  font-size: 28px;
+  color: #000;
+  text-decoration: none;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.user-name {
+  margin: 0 15px;
+  font-size: 28px;
+  color: #000;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaeaea;
+  padding: 60px 150px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+
+.btn:active {
+  background-color: #d0d0d0;
+}
+
+button.btn {
+  display: block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #333;
+}
+
+button.btn:active {
+  background-color: #555;
+}
+
+
+.hero-image {
+  max-width: 40%;
+  height: auto;
+}
+
+.products {
+  padding: 60px 150px;
+}
+
+.products h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the product categories */
+.product-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-categories-left {
+  display: flex;
+  gap: 20px;
+}
+
+.product-category {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.product-category.active {
+  font-weight: bold;
+  position: relative;
+}
+
+.product-category.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.product-category-filter {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.product-category-filter img {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Additional styling for the product list and items */
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(33% - 20px);
+  min-height: 450px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-info h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-info .price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-info .btn {
+  display: block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.show-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling for the About Us and What We Offer sections */
+.about-us {
+  padding: 60px 150px;
+  background: #eaeaea;
+}
+
+.about-us h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-us p {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature {
+  width: 43%;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.feature li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.feature li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.feature p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Styling for the footer */
+.footer {
+  background: #fff;
+  color: #000;
+  padding: 60px 150px;
+}
+
+.footer h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.newsletter {
+  flex: 2;
+  margin-right: 40px;
+}
+
+.newsletter p {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.newsletter img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links div {
+  min-width: 170px;
+}
+
+.links p {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: block;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
